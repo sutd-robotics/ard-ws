@@ -1,6 +1,8 @@
-# ard-ws
+# Arduino Workshop Series 
 
 <a href="LICENSE" ><img src="https://img.shields.io/github/license/sutd-robotics/ard-ws?style=for-the-badge"/></a>
+
+`Sept 2020 Edition`
 
 Resources &amp; code snippets used for the Arduino Workshop Series
 
