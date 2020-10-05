@@ -6,6 +6,7 @@
 Arduino Workshop Series
 Session 3                          
 > Playing note with serial input. 
+> Add the "pitches.h" file into Arduino (via the arrow on the right hand side, select "New Tab" and name it "pitches.h")
 */
 
 #include "pitches.h"
