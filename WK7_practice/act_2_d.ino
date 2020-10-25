@@ -7,7 +7,7 @@
   Practice
   > By 1487Quantum ( https://github.com/1487quantum )
   
-  > Activity 3 (7 segment display, common Anode), Task D
+  > Activity 2 (7 segment display, common Anode), Task D
   > =====================================================
   > Display countdown of the numbers 9 to 0 on the 7 segment display.
 

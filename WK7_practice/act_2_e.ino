@@ -7,7 +7,7 @@
   Practice
   > By 1487Quantum ( https://github.com/1487quantum )
   
-  > Activity 3 (7 segment display, common Anode), Task E
+  > Activity 2 (7 segment display, common Anode), Task E
   > =====================================================
   > Display countdown of the hexadecimal numbers F to 0 on the 7 segment display.
 

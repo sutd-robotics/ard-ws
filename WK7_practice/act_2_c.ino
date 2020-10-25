@@ -7,7 +7,7 @@
   Practice
   > By 1487Quantum ( https://github.com/1487quantum )
   
-  > Activity 3 (7 segment display, common Anode), Task C
+  > Activity 2 (7 segment display, common Anode), Task C
   > =====================================================
   > Display the number 0 to 9 once on the 7 segment display.
 

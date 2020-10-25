@@ -7,7 +7,7 @@
   Practice
   > By 1487Quantum ( https://github.com/1487quantum )
   
-  > Activity 3 (7 segment display, common Anode), Task A
+  > Activity 2 (7 segment display, common Anode), Task A
   > =====================================================
   > The common Anode 7 segment display uses a inverted logic: A LOW would turn on the segment,
   > whereas HIGH would turn it off. This task would be used to determine which pin corresponds
