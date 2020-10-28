@@ -13,9 +13,11 @@
 
 */
 
-#define DELAY 2
+#define DELAY 1
 #define PI 3.1415927
 #define MAX_BRIGHTNESS 255
+#define T_PERIOD 1020
+
 
 const int led_p[3] = {11, 9, 10}; //Red Green Blue
 
@@ -27,14 +29,14 @@ void setup()
 }
 
 void runRamp(int pin) {
-  for (int i = 0; i < MAX_BRIGHTNESS; ++i)
+  for(int i=0; i<T_PERIOD; ++i)
     setLED(pin, i);
 }
 
 void setLED(int pin, int val) {
-  int x_wave = (int) MAX_BRIGHTNESS * sin((1.0 - (val / (1.0 * MAX_BRIGHTNESS))) * PI);
+  int x_wave = (int) MAX_BRIGHTNESS*sin(0.25*val/(1.0*MAX_BRIGHTNESS)*PI);
   analogWrite(pin, x_wave);
-  Serial.println(x_wave);         //Print brightness value
+  Serial.println(x_wave);
   delay(DELAY);
 }
 
