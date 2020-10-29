@@ -133,7 +133,7 @@ Trigger the LED (using the `interrupt method`) to turn on for 3 seconds when mot
 
 
 
-**Changelog**
+## Changelog
 
 **V1.0 (22/10/20)**
 
