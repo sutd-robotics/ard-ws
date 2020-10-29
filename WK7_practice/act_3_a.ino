@@ -9,23 +9,21 @@
   
   > Activity 3 (PIR Motion Sensor with LED), Task A
   > =====================================================
-  > Read the value of the PIR Motion sensor.
+  > Read the value of the PIR Motion Sensor.
 
 
 */
 
 #define PIR_PIN 2
 
-void setup()
-{
+int pRead = 0;
+
+void setup() {
   pinMode(PIR_PIN, INPUT);
   Serial.begin(115200);
 }
 
-int pRead=0;
-
-void loop()
-{
+void loop() {
   pRead = digitalRead(PIR_PIN);
   Serial.println(pRead);
   delay(100); 

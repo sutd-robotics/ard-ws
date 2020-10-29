@@ -21,26 +21,24 @@ const byte LED_PIN = 5;
 volatile byte state = LOW;
 volatile unsigned long duration;
 
-void turnOnLED(){
+void turnOnLED() {
   state = HIGH;
   duration = micros();
 }
 
-void setup()
-{
+void setup() {
   Serial.begin(9600);
   pinMode(LED_PIN, OUTPUT);
   pinMode(PIR_PIN, INPUT);
-  attachInterrupt(digitalPinToInterrupt(PIR_PIN), turnOnLED, RISING );
+  attachInterrupt(digitalPinToInterrupt(PIR_PIN), turnOnLED, RISING);
 }
 
-void loop()
-{
-  Serial.println(micros()-duration);
-  if(state && micros()-duration<=latch_t){
-    digitalWrite(LED_PIN,HIGH);
-  }else{
+void loop() {
+  Serial.println(micros() - duration);
+  if (state && micros() - duration <= latch_t) {
+    digitalWrite(LED_PIN, HIGH);
+  } else {
     state = LOW;
-    digitalWrite(LED_PIN,LOW);
+    digitalWrite(LED_PIN, LOW);
   }
 }

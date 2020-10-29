@@ -110,7 +110,7 @@ Trigger the LED (using the **polling method**) to turn on for 3 seconds when mot
 
 ### Task C
 
-Trigger the LED (using the `interrupt method`) to turn on for 5 seconds when motion is detected.
+Trigger the LED (using the `interrupt method`) to turn on for 3 seconds when motion is detected.
 
 * Recall what is **interrupt**, and how is it implemented.
 * Write a function (that would be called via the `Interrupt Service Routine, ISR`) to update the state of the LED when motion is detected using `attachInterrupt()`.
@@ -144,3 +144,9 @@ Trigger the LED (using the `interrupt method`) to turn on for 5 seconds when mot
 * Added more details for the questions
 * Split the sections up
 * Updated images, added graphs
+
+**V1.2 (29/10/20)**
+
+- Fix some typos
+- Fix inconsistencies between questions and answers
+- Standardize code formatting
