@@ -17,26 +17,23 @@
 #define PIR_PIN 2
 #define LED_PIN 5
 
-int pRead=0;
+int pRead = 0;
 
-void setup()
-{
+void setup() {
   pinMode(LED_PIN, OUTPUT);
   pinMode(PIR_PIN, INPUT);
 }
 
-void turnOnLED(){
-  digitalWrite(LED_PIN,HIGH);
+void turnOnLED() {
+  digitalWrite(LED_PIN, HIGH);
   delay(3000);
-  digitalWrite(LED_PIN,LOW);
+  digitalWrite(LED_PIN, LOW);
   delay(1);
 }
 
-
-void loop()
-{
+void loop() {
   pRead = digitalRead(PIR_PIN);
-  if(pRead)
+  if (pRead)
     turnOnLED();
   delay(100); 
 }

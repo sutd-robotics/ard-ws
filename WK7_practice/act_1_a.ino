@@ -12,12 +12,11 @@
 
 */
 
-#define DELAY 2000          //Define how long to delay LED
+#define DELAY 2000                //Define how long to delay LED
 const int led_p[3] = {11, 10, 9}; //LED pins to be used: RED BLUE GREEN
 
-void setup()
-{
-  for (int i = 0; i < 3; ++i) //Pin initialization
+void setup() {
+  for (int i = 0; i < 3; ++i)     //Pin initialization
     pinMode(led_p[i], OUTPUT);
 }
 
@@ -28,8 +27,7 @@ void setLED(int pin) {
   delay(DELAY);
 }
 
-void loop()
-{
-  for (int i = 0; i < 3; ++i) //Run through the 3 colors
+void loop() {
+  for (int i = 0; i < 3; ++i)     //Run through the 3 colors
     setLED(led_p[i]);
 }
